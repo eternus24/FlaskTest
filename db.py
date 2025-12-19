@@ -6,8 +6,7 @@ class Database:
         self.connection = None
         try:
             self.connection = pymysql.connect(
-                host='svc.sel3.cloudtype.app',
-                port=32724,
+                host='192.168.0.226',
                 # host='svc.sel5.cloudtype.app',
                 # port=31484,
                 database='test',  # test 데이터베이스 사용
@@ -68,3 +67,4 @@ class Database:
             self.connection.close()
 
             print("MariaDB 연결이 종료되었습니다.")
+
